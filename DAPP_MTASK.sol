@@ -134,7 +134,7 @@ function refund(uint256 user_id) public  refundallowedtime {
 if(fund[user_id].raiseamount < goal){
     
     uint256 amount = fund[user_id].raiseamount;
-    // address a = fund[user_id]
+    
     payable(msg.sender).transfer(amount);
     emit refundclaim(msg.sender, user_id,amount);
 }
