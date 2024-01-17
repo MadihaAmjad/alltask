@@ -1,0 +1,58 @@
+{
+	"compiler": {
+		"version": "0.8.22+commit.4fc1097e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "set",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"pract.sol": "Storage"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"pract.sol": {
+			"keccak256": "0xcce93a49050a64eff051bb479e08a8586398ee0f4acc74340e479f35c31e8f43",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://828c4da055375ad3cc434bd9def826d82a9af67b733303fa1a8111e39af981ff",
+				"dweb:/ipfs/QmNLnQpTN59PMSm1AQfJaMGJq9jHaRz8SbSmfHJQF9oQkL"
+			]
+		}
+	},
+	"version": 1
+}

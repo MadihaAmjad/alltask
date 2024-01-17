@@ -66,7 +66,7 @@ contract StandardToken {
 
     uint256 public totalSupply;
 
-    function totalSupply() public constant returns (uint256 supply) {
+    function totalSupply() public  returns (uint256 supply) {
         return totalSupply;
     }
 

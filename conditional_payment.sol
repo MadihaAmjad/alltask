@@ -9,8 +9,6 @@ function sender(address payable a) public  payable {
 
 a.transfer(msg.value);
 
-       
-
 }
 
 function withdraw(address payable ab) public payable  {

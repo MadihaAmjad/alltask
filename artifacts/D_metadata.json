@@ -6,17 +6,21 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"stateMutability": "nonpayable",
-				"type": "constructor"
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "a",
+						"type": "string"
+					}
+				],
+				"name": "call",
+				"type": "event"
 			},
 			{
-				"stateMutability": "payable",
-				"type": "fallback"
-			},
-			{
 				"inputs": [],
-				"name": "fallbackcoun",
+				"name": "getTotalAmount",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -29,32 +33,12 @@
 			},
 			{
 				"inputs": [],
-				"name": "getter",
+				"name": "totalAmountReceived",
 				"outputs": [
 					{
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "onlyowner",
-				"outputs": [],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "owner",
-				"outputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
 					}
 				],
 				"stateMutability": "view",
@@ -78,7 +62,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"fallback_function_pract.sol": "test"
+			"special_function_practice.sol": "D"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -92,12 +76,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"fallback_function_pract.sol": {
-			"keccak256": "0x6ec52e48738fe975b2cdb4180157762a841024bd467424f759c054af8ef5722c",
-			"license": "GPL-3.0",
+		"special_function_practice.sol": {
+			"keccak256": "0x81709b7d6c6e19ff3c149f3187747e15ee7228f0dcfb73a70cc5024273c5ab54",
+			"license": "MIT",
 			"urls": [
-				"bzz-raw://a1a6f8413d73eef9b839404b479e9506b83abc0439d9730938ec9684945fa6d2",
-				"dweb:/ipfs/Qmb3v81SeDhnB1c2djMA8L8hANBSr2Zu1Fn3pcsK6kTmjZ"
+				"bzz-raw://bc23222d83c07490cc313cfac14da3c34037868881a465cccb5abe5f6d92ee33",
+				"dweb:/ipfs/QmYHtj8VnzyB9L5KyF4UNWLFiA6YUrZCyTYhudB4ajWpES"
 			]
 		}
 	},

@@ -1,0 +1,153 @@
+{
+	"compiler": {
+		"version": "0.8.22+commit.4fc1097e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "userAddress",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "userId",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "userName",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "userBalance",
+						"type": "uint256"
+					}
+				],
+				"name": "UserRegistered",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_userAddress",
+						"type": "address"
+					}
+				],
+				"name": "getUserInfo",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_userId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_userName",
+						"type": "string"
+					}
+				],
+				"name": "registerUser",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "users",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "userId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "userName",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "userBalance",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/dummytask.sol": "StructMappingExample"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/dummytask.sol": {
+			"keccak256": "0xc4bc59d1ef8ea64e6fc7d90a7f5bdf44aa468270d831a1b1494e32dfb9dfd109",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://df0cf584bea42e576f6472c48bede6a2209ad1c4d17f92364c38610632bac46e",
+				"dweb:/ipfs/QmPJGCooMmPuxQNxKdJ5C6XJkswRZ9rAp1XhJ4mMTHvt5J"
+			]
+		}
+	},
+	"version": 1
+}

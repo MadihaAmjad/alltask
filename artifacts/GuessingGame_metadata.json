@@ -1,0 +1,64 @@
+{
+	"compiler": {
+		"version": "0.8.22+commit.4fc1097e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "payable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_guess",
+						"type": "uint256"
+					}
+				],
+				"name": "guess",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"random_number.sol": "GuessingGame"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"random_number.sol": {
+			"keccak256": "0xd2e6c554f18e94ccb63aa0aef6736ddad70cae86a880f7a7c2d9a47e0e9f6dd1",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://42fce640d5cb9322400c0de22b3e1aead9139dea10ffa3e164999773c5d5d998",
+				"dweb:/ipfs/QmZ9xJTrCT6qrMgFGGDKkAEcCdtpUfQDzwUQs9kt8KyzCW"
+			]
+		}
+	},
+	"version": 1
+}

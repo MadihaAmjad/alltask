@@ -1,0 +1,101 @@
+{
+	"compiler": {
+		"version": "0.4.26+commit.4563c3fc"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "userId",
+						"type": "uint256"
+					}
+				],
+				"name": "getData",
+				"outputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "datamatching",
+				"outputs": [
+					{
+						"name": "ownernumber",
+						"type": "uint256"
+					},
+					{
+						"name": "id",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "_ownernumber",
+						"type": "uint256"
+					},
+					{
+						"name": "_id",
+						"type": "uint256"
+					}
+				],
+				"name": "storedata",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"taskerchecker.sol": "tracking"
+		},
+		"evmVersion": "byzantium",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"taskerchecker.sol": {
+			"keccak256": "0x8912d066ae5c5dcd3d8949f143b5ccfe25f79960c82e17440ed85e197cd62423",
+			"urls": [
+				"bzzr://e49124b993fada5ceceb0194776125f495b54f59265c1ee28aa5c3e625cc8f63"
+			]
+		}
+	},
+	"version": 1
+}

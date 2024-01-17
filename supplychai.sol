@@ -39,6 +39,7 @@ contract SupplyChainTracker {
 
     function markInTransit(address item) external onlyOwner {
         _addItemStep(item, SupplyChainState.InTransit);
+        
         emit ItemInTransit(item, block.timestamp);
     }
 

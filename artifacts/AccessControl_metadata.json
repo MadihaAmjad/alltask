@@ -1,0 +1,107 @@
+{
+	"compiler": {
+		"version": "0.8.22+commit.4fc1097e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "accessLevels",
+				"outputs": [
+					{
+						"internalType": "enum AccessControl.AccessLevel",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "user",
+						"type": "address"
+					},
+					{
+						"internalType": "enum AccessControl.AccessLevel",
+						"name": "requiredLevel",
+						"type": "uint8"
+					}
+				],
+				"name": "hasAccessLevel",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "user",
+						"type": "address"
+					},
+					{
+						"internalType": "enum AccessControl.AccessLevel",
+						"name": "level",
+						"type": "uint8"
+					}
+				],
+				"name": "setAccessLevel",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"simpletask.sol": "AccessControl"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"simpletask.sol": {
+			"keccak256": "0x3e20bb89a6f6cb3b9cca0b770d0bbe33e78bf0dfbfbec12bc3e9a2e1b1bb30d5",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://68f2ca0ebb478505ec9c4f8ab6c858571cd9c6b49db27fb641a2c861707abb78",
+				"dweb:/ipfs/QmU6zJyYzz9Rjx9wmXBoP8R8G9cFAwrg9oFKV6zREqs6eX"
+			]
+		}
+	},
+	"version": 1
+}

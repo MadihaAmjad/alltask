@@ -1,0 +1,78 @@
+{
+	"compiler": {
+		"version": "0.8.22+commit.4fc1097e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address payable",
+						"name": "con",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "callwithLowLevel",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "callwithSend",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "callwithTransfer",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"special_function_practice.sol": "B"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"special_function_practice.sol": {
+			"keccak256": "0x81709b7d6c6e19ff3c149f3187747e15ee7228f0dcfb73a70cc5024273c5ab54",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://bc23222d83c07490cc313cfac14da3c34037868881a465cccb5abe5f6d92ee33",
+				"dweb:/ipfs/QmYHtj8VnzyB9L5KyF4UNWLFiA6YUrZCyTYhudB4ajWpES"
+			]
+		}
+	},
+	"version": 1
+}

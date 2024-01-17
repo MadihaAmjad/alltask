@@ -11,12 +11,8 @@
 				"type": "constructor"
 			},
 			{
-				"stateMutability": "payable",
-				"type": "fallback"
-			},
-			{
 				"inputs": [],
-				"name": "fallbackcoun",
+				"name": "allowedtime",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -29,7 +25,7 @@
 			},
 			{
 				"inputs": [],
-				"name": "getter",
+				"name": "balanceOf",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -37,13 +33,6 @@
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "onlyowner",
-				"outputs": [],
 				"stateMutability": "view",
 				"type": "function"
 			},
@@ -61,8 +50,22 @@
 				"type": "function"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "address payable",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "transfer",
+				"outputs": [],
 				"stateMutability": "payable",
-				"type": "receive"
+				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -78,7 +81,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"fallback_function_pract.sol": "test"
+			"dummy_checker_task5.sol": "CrowdSale"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -92,12 +95,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"fallback_function_pract.sol": {
-			"keccak256": "0x6ec52e48738fe975b2cdb4180157762a841024bd467424f759c054af8ef5722c",
-			"license": "GPL-3.0",
+		"dummy_checker_task5.sol": {
+			"keccak256": "0xf7f1c21363a7f9c13c79abaa38658819bc5eca10cdfaea090a44e9a5cafea5fe",
+			"license": "MIT",
 			"urls": [
-				"bzz-raw://a1a6f8413d73eef9b839404b479e9506b83abc0439d9730938ec9684945fa6d2",
-				"dweb:/ipfs/Qmb3v81SeDhnB1c2djMA8L8hANBSr2Zu1Fn3pcsK6kTmjZ"
+				"bzz-raw://744c9589565e65a0d280877403ffc7f2dcd14d9a21eee8816f2d3e5b5a48d1f7",
+				"dweb:/ipfs/QmP2aU7rHvWx8aW8znsa4QDPUW6P8nnBPqNApY31rqEHMQ"
 			]
 		}
 	},

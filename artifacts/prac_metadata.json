@@ -1,0 +1,65 @@
+{
+	"compiler": {
+		"version": "0.8.22+commit.4fc1097e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "ab",
+						"type": "string"
+					}
+				],
+				"name": "st",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"solidty_practice.sol": "prac"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"solidty_practice.sol": {
+			"keccak256": "0xb3ecf30a8f421cf497186b0348345e97728733dde9c14878155e66d4322df88a",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://6309020c8416b896a3ccde66136c12297ba2124517bbd4b96987356d680a1145",
+				"dweb:/ipfs/QmXuqaNtgQusYyh47SVaRcc8sXNrYPZKDa88jrWqCrmeTw"
+			]
+		}
+	},
+	"version": 1
+}

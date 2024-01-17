@@ -1,0 +1,63 @@
+{
+	"compiler": {
+		"version": "0.8.22+commit.4fc1097e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "total_amount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"special_function_practice.sol": "special_function"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"special_function_practice.sol": {
+			"keccak256": "0x3623c97be9d567618361c97bfb00131412b3ed8bf130f56571635fb9df0e1987",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://df46c9fac90b4703e54aa24648fd71afd1cbf712a770e15624ecc53584cab482",
+				"dweb:/ipfs/QmNNzWz3c6pNv1NtwtA71soFDqUBgqLkAseiFfMGt1XQGi"
+			]
+		}
+	},
+	"version": 1
+}

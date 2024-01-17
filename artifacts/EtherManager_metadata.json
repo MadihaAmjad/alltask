@@ -11,12 +11,46 @@
 				"type": "constructor"
 			},
 			{
-				"stateMutability": "payable",
-				"type": "fallback"
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "sender",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "Received",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "receiver",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "Withdrawal",
+				"type": "event"
 			},
 			{
 				"inputs": [],
-				"name": "fallbackcoun",
+				"name": "getContractBalance",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -24,26 +58,6 @@
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "getter",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "onlyowner",
-				"outputs": [],
 				"stateMutability": "view",
 				"type": "function"
 			},
@@ -58,6 +72,19 @@
 					}
 				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "withdrawEther",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
@@ -78,7 +105,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"fallback_function_pract.sol": "test"
+			"dummy_task_code.sol": "EtherManager"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -92,12 +119,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"fallback_function_pract.sol": {
-			"keccak256": "0x6ec52e48738fe975b2cdb4180157762a841024bd467424f759c054af8ef5722c",
-			"license": "GPL-3.0",
+		"dummy_task_code.sol": {
+			"keccak256": "0xc9570e514fa948cbabc9024c8e218a2bfde17698e5d8a724b22370692c72a3da",
+			"license": "MIT",
 			"urls": [
-				"bzz-raw://a1a6f8413d73eef9b839404b479e9506b83abc0439d9730938ec9684945fa6d2",
-				"dweb:/ipfs/Qmb3v81SeDhnB1c2djMA8L8hANBSr2Zu1Fn3pcsK6kTmjZ"
+				"bzz-raw://56271f0967f23fd57fe0761939c2eff49076ced88ba666a644a801a9412ed130",
+				"dweb:/ipfs/QmbAzeKkieuBvpVNBM9Yd5oLMGarkPi5wPusVaaoRbtK5b"
 			]
 		}
 	},

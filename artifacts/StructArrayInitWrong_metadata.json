@@ -1,0 +1,66 @@
+{
+	"compiler": {
+		"version": "0.8.22+commit.4fc1097e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "createRoom",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getRoomsLength",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"taskerchecker.sol": "StructArrayInitWrong"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"taskerchecker.sol": {
+			"keccak256": "0xf00847d9445f2f1b948bdd3eb1e43d874bacc664bf25119d1bf05a7d234b07e0",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://f027666fac363bb64cc149d9bb4607169070b4f6c59c253c41fb91e0cbe0ebdc",
+				"dweb:/ipfs/QmS6LXvnAfGyi3p3VQiqGLdxdvbhPot9mFuMHA23SBuzpB"
+			]
+		}
+	},
+	"version": 1
+}

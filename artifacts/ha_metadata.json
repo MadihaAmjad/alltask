@@ -1,0 +1,70 @@
+{
+	"compiler": {
+		"version": "0.8.23+commit.f704f362"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "password",
+						"type": "string"
+					}
+				],
+				"name": "hashmessage",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"task7.sol": "ha"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"task7.sol": {
+			"keccak256": "0xca8e3cdd0baefb863834c3dfd803042a61b34de616bbe425156c974f472575d4",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://e671ebc5b5b007430d9151c7edca99b39a36f22dd02f44318f6ea39e26a6273f",
+				"dweb:/ipfs/Qmc2k2UeJhjsV7LXk7GycWWxbsko9VSpLP9RjQJPxsZjW7"
+			]
+		}
+	},
+	"version": 1
+}

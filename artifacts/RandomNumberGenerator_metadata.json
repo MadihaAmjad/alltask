@@ -1,0 +1,59 @@
+{
+	"compiler": {
+		"version": "0.8.22+commit.4fc1097e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "generateRandomNumber",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"random_number.sol": "RandomNumberGenerator"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"random_number.sol": {
+			"keccak256": "0xd00078a582313fce3fc3bf8992e762ac7b6976c15c3cff7dac45c01c40587346",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://467dacf18881213e220b9ceb7f97e67bef34c628e33f383ec896a16f280d0132",
+				"dweb:/ipfs/QmcADNRmp8sk3Gf7368sbDvQmWrV8Ey8of5GkvofvL84RC"
+			]
+		}
+	},
+	"version": 1
+}

@@ -7,16 +7,7 @@
 		"abi": [
 			{
 				"inputs": [],
-				"stateMutability": "nonpayable",
-				"type": "constructor"
-			},
-			{
-				"stateMutability": "payable",
-				"type": "fallback"
-			},
-			{
-				"inputs": [],
-				"name": "fallbackcoun",
+				"name": "getTotalAmount",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -29,32 +20,12 @@
 			},
 			{
 				"inputs": [],
-				"name": "getter",
+				"name": "totalAmountReceived",
 				"outputs": [
 					{
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "onlyowner",
-				"outputs": [],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "owner",
-				"outputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
 					}
 				],
 				"stateMutability": "view",
@@ -78,7 +49,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"fallback_function_pract.sol": "test"
+			"special_function_practice.sol": "DonationBox"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -92,12 +63,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"fallback_function_pract.sol": {
-			"keccak256": "0x6ec52e48738fe975b2cdb4180157762a841024bd467424f759c054af8ef5722c",
-			"license": "GPL-3.0",
+		"special_function_practice.sol": {
+			"keccak256": "0x842c7193abc6df550874ea7693cd52fc024600035c83d27ac2d70da9c56f2c7e",
+			"license": "MIT",
 			"urls": [
-				"bzz-raw://a1a6f8413d73eef9b839404b479e9506b83abc0439d9730938ec9684945fa6d2",
-				"dweb:/ipfs/Qmb3v81SeDhnB1c2djMA8L8hANBSr2Zu1Fn3pcsK6kTmjZ"
+				"bzz-raw://c5b4a639a254d726f3f8836d9fbdcdb3b56bb8d75fd77b6a2b26eab6170de3ec",
+				"dweb:/ipfs/QmQ9YJKY9ZpsCvYqaas9dXA41EpX4mpobhJWDBbJpB4ymN"
 			]
 		}
 	},

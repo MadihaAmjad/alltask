@@ -6,45 +6,40 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_targetValue",
+						"type": "uint256"
+					}
+				],
 				"stateMutability": "nonpayable",
 				"type": "constructor"
 			},
 			{
-				"stateMutability": "payable",
-				"type": "fallback"
-			},
-			{
-				"inputs": [],
-				"name": "fallbackcoun",
-				"outputs": [
+				"anonymous": false,
+				"inputs": [
 					{
+						"indexed": false,
 						"internalType": "uint256",
-						"name": "",
+						"name": "value",
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "view",
-				"type": "function"
+				"name": "TransactionExecuted",
+				"type": "event"
 			},
 			{
-				"inputs": [],
-				"name": "getter",
-				"outputs": [
+				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "",
+						"name": "_value",
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "onlyowner",
+				"name": "executeTransaction",
 				"outputs": [],
-				"stateMutability": "view",
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
@@ -61,8 +56,17 @@
 				"type": "function"
 			},
 			{
-				"stateMutability": "payable",
-				"type": "receive"
+				"inputs": [],
+				"name": "targetValue",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -78,7 +82,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"fallback_function_pract.sol": "test"
+			"contracts/dummytask.sol": "IntegerTransaction"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -92,12 +96,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"fallback_function_pract.sol": {
-			"keccak256": "0x6ec52e48738fe975b2cdb4180157762a841024bd467424f759c054af8ef5722c",
-			"license": "GPL-3.0",
+		"contracts/dummytask.sol": {
+			"keccak256": "0xdd0cf07fbb5f99ac6dde6f69543c77399b0e10bb83b4d6cb2589ba9f0902cb38",
+			"license": "MIT",
 			"urls": [
-				"bzz-raw://a1a6f8413d73eef9b839404b479e9506b83abc0439d9730938ec9684945fa6d2",
-				"dweb:/ipfs/Qmb3v81SeDhnB1c2djMA8L8hANBSr2Zu1Fn3pcsK6kTmjZ"
+				"bzz-raw://b7984e147129e32ae391137c5d8fc869f6e432d23b69c2cdef839be0e3c21210",
+				"dweb:/ipfs/QmWF7nuR91kc2QNVAnpLfFEcWHhat7DTP7fDN8iY5K7CNR"
 			]
 		}
 	},

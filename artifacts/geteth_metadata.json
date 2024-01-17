@@ -1,0 +1,51 @@
+{
+	"compiler": {
+		"version": "0.8.22+commit.4fc1097e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"receive_ether_practice.sol": "geteth"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"receive_ether_practice.sol": {
+			"keccak256": "0x94ea223b1a52b7072ea52a481f4b08a12eb5734ff71e170022a4a2082edfa265",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://d7b9627aa94ee7da0906102d0a8c246394bb2bd898cc74e63dead5b4d0a8c04e",
+				"dweb:/ipfs/QmPhLZF4NvEt9LUFdCMb7XaQiDkCcQsT2BMjZzJcM2xwNH"
+			]
+		}
+	},
+	"version": 1
+}

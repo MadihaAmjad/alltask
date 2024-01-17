@@ -1,0 +1,75 @@
+{
+	"compiler": {
+		"version": "0.8.22+commit.4fc1097e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "withdraw",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"practice_owner.sol": "EtherWallet"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"practice_owner.sol": {
+			"keccak256": "0xf4363ea2487b8cb81596f531e3b8c60085c9edc09cd17dc3b2730ef3d16ebee7",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d7fdad0a9fd1f503102049b7776d59d5ce7f587a55ebcdeb8da1c3920b076436",
+				"dweb:/ipfs/QmQVwtLGKshSVYztkeLPPCciHeNykLLEppCB1DJ2udUzPY"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,59 @@
+{
+	"compiler": {
+		"version": "0.8.22+commit.4fc1097e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address payable",
+						"name": "recipient",
+						"type": "address"
+					}
+				],
+				"name": "transferEther",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"practice_Code.sol": "practicecode"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"practice_Code.sol": {
+			"keccak256": "0xbfa26a492827fe8cd4e5175f81571ebc5bb7e9f0cab93aa79ae65a4b2828f2b9",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://1cbed194bc4ad379049f3f4902c15cb24d21ad24078a573ad3583437f28ca65c",
+				"dweb:/ipfs/QmXJLLpMmicNuxpKoWCmm5X3xEkYukGFt3jWKFK81iRTLx"
+			]
+		}
+	},
+	"version": 1
+}

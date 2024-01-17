@@ -1,0 +1,121 @@
+{
+	"compiler": {
+		"version": "0.8.22+commit.4fc1097e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "b",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "auth",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "book_id",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "bname",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "bauth",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "b_id",
+						"type": "uint256"
+					}
+				],
+				"name": "set",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "auth",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "book_id",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct structpract.books",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Struct_practice.sol": "structpract"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Struct_practice.sol": {
+			"keccak256": "0xca0bfb77c18bd7306b96745f2c06ed5b2d6906862488ea7f9e34f5a0bb57103c",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://ad933f3823d8ec82d7f3518ead53ea5377df1b2afb42a71660ee51991080b622",
+				"dweb:/ipfs/Qmdq9qWnjYMHp3Dt1scfnYqwULH7EgusY5XDhFvcR6uRT6"
+			]
+		}
+	},
+	"version": 1
+}

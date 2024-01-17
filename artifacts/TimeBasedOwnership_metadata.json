@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.22+commit.4fc1097e"
+		"version": "0.8.23+commit.f704f362"
 	},
 	"language": "Solidity",
 	"output": {
@@ -11,12 +11,27 @@
 				"type": "constructor"
 			},
 			{
-				"stateMutability": "payable",
-				"type": "fallback"
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "previousOwner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "OwnershipTransferred",
+				"type": "event"
 			},
 			{
 				"inputs": [],
-				"name": "fallbackcoun",
+				"name": "changeOwnershipTimestamp",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -24,26 +39,6 @@
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "getter",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "onlyowner",
-				"outputs": [],
 				"stateMutability": "view",
 				"type": "function"
 			},
@@ -61,8 +56,17 @@
 				"type": "function"
 			},
 			{
-				"stateMutability": "payable",
-				"type": "receive"
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_newOwner",
+						"type": "address"
+					}
+				],
+				"name": "transferOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -78,7 +82,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"fallback_function_pract.sol": "test"
+			"timebaseowner.sol": "TimeBasedOwnership"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -92,12 +96,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"fallback_function_pract.sol": {
-			"keccak256": "0x6ec52e48738fe975b2cdb4180157762a841024bd467424f759c054af8ef5722c",
-			"license": "GPL-3.0",
+		"timebaseowner.sol": {
+			"keccak256": "0x0350fb7edffe2172ff41fe6b12febd584d2554c5d57ff976e5bdae508011e690",
+			"license": "MIT",
 			"urls": [
-				"bzz-raw://a1a6f8413d73eef9b839404b479e9506b83abc0439d9730938ec9684945fa6d2",
-				"dweb:/ipfs/Qmb3v81SeDhnB1c2djMA8L8hANBSr2Zu1Fn3pcsK6kTmjZ"
+				"bzz-raw://c3004c41a334a7ca78c43eb53e1bccdc4065513612a1910985c07be8efd53665",
+				"dweb:/ipfs/QmS7TuxDKuwkJyd55kWnZwPAKfXd4jKrvmGgYptRC2twf5"
 			]
 		}
 	},

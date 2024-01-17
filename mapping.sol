@@ -6,9 +6,11 @@ contract map{
     mapping(uint=>address) public ad;
 
     function add(address balance,uint value) public{
-      
+       
       ad[value]= balance;
 
     }
+
+
 }
 
