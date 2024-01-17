@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.22+commit.4fc1097e"
+		"version": "0.8.23+commit.f704f362"
 	},
 	"language": "Solidity",
 	"output": {
@@ -21,25 +21,6 @@
 					}
 				],
 				"name": "ab",
-				"type": "event"
-			},
-			{
-				"anonymous": false,
-				"inputs": [
-					{
-						"indexed": false,
-						"internalType": "address",
-						"name": "user",
-						"type": "address"
-					},
-					{
-						"indexed": false,
-						"internalType": "uint256",
-						"name": "amount",
-						"type": "uint256"
-					}
-				],
-				"name": "completion",
 				"type": "event"
 			},
 			{
@@ -120,42 +101,17 @@
 			},
 			{
 				"inputs": [],
-				"name": "active",
-				"outputs": [
-					{
-						"internalType": "bool",
-						"name": "",
-						"type": "bool"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
 				"name": "claim",
 				"outputs": [
 					{
-						"components": [
-							{
-								"internalType": "string",
-								"name": "name",
-								"type": "string"
-							},
-							{
-								"internalType": "string",
-								"name": "discription",
-								"type": "string"
-							},
-							{
-								"internalType": "address",
-								"name": "user",
-								"type": "address"
-							}
-						],
-						"internalType": "struct final_task.funding[]",
+						"internalType": "address",
 						"name": "",
-						"type": "tuple[]"
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "payable",
@@ -165,43 +121,41 @@
 				"inputs": [
 					{
 						"internalType": "address payable",
-						"name": "id",
+						"name": "sender",
 						"type": "address"
 					},
 					{
-						"internalType": "address payable",
-						"name": "sender",
-						"type": "address"
+						"internalType": "string",
+						"name": "_discription",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
 					},
 					{
 						"internalType": "uint256",
 						"name": "amount",
 						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "_newowner",
+						"type": "address"
 					}
 				],
 				"name": "contribute",
 				"outputs": [
 					{
-						"components": [
-							{
-								"internalType": "string",
-								"name": "name",
-								"type": "string"
-							},
-							{
-								"internalType": "string",
-								"name": "discription",
-								"type": "string"
-							},
-							{
-								"internalType": "address",
-								"name": "user",
-								"type": "address"
-							}
-						],
-						"internalType": "struct final_task.funding[]",
+						"internalType": "address",
 						"name": "",
-						"type": "tuple[]"
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "payable",
@@ -244,32 +198,6 @@
 				"type": "function"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"name": "datas",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "deactivate",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
 				"inputs": [],
 				"name": "endtime",
 				"outputs": [
@@ -277,42 +205,6 @@
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "_userAddress",
-						"type": "address"
-					}
-				],
-				"name": "getUserDetails",
-				"outputs": [
-					{
-						"components": [
-							{
-								"internalType": "string",
-								"name": "name",
-								"type": "string"
-							},
-							{
-								"internalType": "string",
-								"name": "discription",
-								"type": "string"
-							},
-							{
-								"internalType": "address",
-								"name": "user",
-								"type": "address"
-							}
-						],
-						"internalType": "struct final_task.funding[]",
-						"name": "",
-						"type": "tuple[]"
 					}
 				],
 				"stateMutability": "view",
@@ -347,24 +239,29 @@
 			{
 				"inputs": [],
 				"name": "refund",
-				"outputs": [],
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
 				"stateMutability": "payable",
 				"type": "function"
 			},
 			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "_userAddress",
-						"type": "address"
-					}
-				],
-				"name": "userExists",
+				"inputs": [],
+				"name": "starttime",
 				"outputs": [
 					{
-						"internalType": "string",
+						"internalType": "uint256",
 						"name": "",
-						"type": "string"
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -384,7 +281,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/testing_final.sol": "final_task"
+			"contracts/finl_task.sol": "final_task"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -398,12 +295,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/testing_final.sol": {
-			"keccak256": "0x219e4ab4f442c5e69a7a7aa8c866c508cbc7a37a52ebebeab3abdbbf25001ebf",
+		"contracts/finl_task.sol": {
+			"keccak256": "0x876c3450f635cb992b6a3ae5998cea9020ac215bf41ad7f5fdb1406bf013942f",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://01a973be8379a0316b8136fe5ed68d89603a627ad85e63e6e6b21910aa7f341d",
-				"dweb:/ipfs/QmeEX6gcykbrbbif6wohMy7qo6HiLtwFeaZG3eDSiH8xR2"
+				"bzz-raw://e3655ab02f7b04b0ec3baa6c173ada2ac63b8347ba48036eb5c9046290a6f728",
+				"dweb:/ipfs/QmYm381NqY9pTADT5L9bnGa4St6eprrdandfMoiLn61YJ3"
 			]
 		}
 	},

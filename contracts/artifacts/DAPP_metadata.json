@@ -138,6 +138,25 @@
 						"type": "uint256"
 					}
 				],
+				"name": "campaignowner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "user_id",
+						"type": "uint256"
+					}
+				],
 				"name": "claim",
 				"outputs": [],
 				"stateMutability": "nonpayable",
@@ -182,6 +201,11 @@
 					{
 						"components": [
 							{
+								"internalType": "uint256",
+								"name": "id",
+								"type": "uint256"
+							},
+							{
 								"internalType": "string",
 								"name": "name",
 								"type": "string"
@@ -217,6 +241,11 @@
 			},
 			{
 				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					},
 					{
 						"internalType": "string",
 						"name": "_name",
@@ -259,6 +288,11 @@
 					{
 						"components": [
 							{
+								"internalType": "uint256",
+								"name": "id",
+								"type": "uint256"
+							},
+							{
 								"internalType": "string",
 								"name": "name",
 								"type": "string"
@@ -287,32 +321,6 @@
 						"internalType": "struct DAPP.funding",
 						"name": "",
 						"type": "tuple"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "goals",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "id",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -368,7 +376,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"DAPP_Task.sol": "DAPP"
+			"contracts/DAPP_task.sol": "DAPP"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -382,12 +390,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"DAPP_Task.sol": {
-			"keccak256": "0x4b06c6e2191ebafb9f2437b7aa9454590eb0dba9e44e9270e63028a1b8175670",
+		"contracts/DAPP_task.sol": {
+			"keccak256": "0xcdcfdfdb41bc33f90a51105672b78d19f11479b04aebc8ff4eb6e03317310cee",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://48dc4c2b572b599addf458b88d9dbd4ec39c3af70457a5e467913ed36c7c6c7a",
-				"dweb:/ipfs/QmVsK7NPSvnyt5t8PB2HDt2M4XWmPsjRCFbZxMcsSMKmxo"
+				"bzz-raw://9a5973b8c1e497590a9f200a9c239d001c42f4d1ac7edaed97ed8add1eae1717",
+				"dweb:/ipfs/QmSksqwrFiauAFBuVREJekfY5NZaj4VanBuz7mDTrJnM6r"
 			]
 		}
 	},

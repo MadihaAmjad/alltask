@@ -54,24 +54,26 @@ modifier allowedtime(){
     struct funding{ 
      string name;
      string  discription;
-     address user;
+    // uint user;
+    uint256 raisedamount;
     //   uint256 goal;
     //   check_state state;
     // bool active;
 
     }
-    mapping(address=>funding[]) private data;
-mapping(address=>uint) public  datas;
+    uint256 public _user;
+    // mapping(uint256=>funding[]) public data;
+    funding[] public d;
+// mapping(address=>uint) public  datas;
     function adduser(  string memory _name,
-     string memory  _discription,
-     address _user) private {
+     string memory  _discription) private {
       
-      data[_user].push(
+      d[_user].push(
        funding(
            
                  _name,
                  _discription,
-                 _user
+                 0
                   
        )
 
@@ -82,40 +84,43 @@ mapping(address=>uint) public  datas;
      } 
 
   function creations(string memory _name,
-     string memory _discription, address _user) public isactive  {
+     string memory _discription) public isactive  {
  
-adduser(_name, _discription,_user);
+adduser(_name, _discription);
 state = check_state.creation;
 emit creation(msg.sender,_name,_discription);
 
 
 }
+// funding[] public d;
 
-function contribute(address payable id,address payable  sender,  uint amount) public payable onlyowner isactive allowedtime returns(funding[] memory) {
+function contribute(uint256   u_id,  uint amount) public payable onlyowner isactive allowedtime returns(funding[] memory) {
     // userExists(msg.sender);
     // transferOwnership(_newowner);
-    sender.transfer(amount);
+    // sender.transfer(amount);
     //   state.contributions;
-    state= check_state.contributions;
-    //   datas[msg.sender] -= amount;
-    //     datas[id] += amount;
+    // state= check_state.contributions;
+    funding storage fun = d[u_id];
+
+    //   data[u_id].raisedamount += msg.value;
+      //  datas[id] += amount;
     emit contributions(msg.sender,amount);
-    return   getUserDetails(sender);
+    return   getUserDetails(u_id);
    
     
 }
 
-function claim() public  payable onlyowner  returns(funding[] memory) {
+function claim(uint256 u_id) public  payable onlyowner  returns(funding[] memory) {
 
    
 
-     if(address(this).balance >= goal  ){
+     if(d[u_id].raisedamount >= goal  ){
       
         payable(owner).transfer(address(this).balance);
         deactivate();
           state= check_state.completion;
         emit completion(msg.sender, address(this).balance);
-      return  getUserDetails(msg.sender);
+      return  getUserDetails(u_id);
         
     }
    
@@ -159,17 +164,17 @@ function refund()public payable  {
 }
 
 
- function getUserDetails(address _userAddress) public view returns (funding[] memory) {
-        return data[_userAddress];
+ function getUserDetails(uint256 _userAddress) public view returns (funding[] memory) {
+        return d[_userAddress];
        
    
 
 }
 
- function userExists(address _userAddress) public  view returns (string memory) {
-        uint256 userCount = data[_userAddress].length;
+ function userExists(uint _userAddress) public  view returns (string memory) {
+        uint256 userCount = d[_userAddress].length;
         for (uint256 j = 0; j < userCount; j++) {
-            if (data[_userAddress][j].user == _userAddress) {
+            if (d[_userAddress][j].user == _userAddress) {
 
 // string memory abc = "user are registered";
 // return abc;
