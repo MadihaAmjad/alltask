@@ -13,7 +13,7 @@ event error(string);
 
 address public  contract_owner;
 uint256 public endtime= block.timestamp + 2 minutes;
-uint256 constant goals = 20 ether;
+uint256 constant goal = 20 ether;
 
 constructor(){
     contract_owner = msg.sender;
@@ -35,6 +35,7 @@ modifier onlycampowner(uint256 _id){
 }
 
 
+
 struct funding{
 uint256 id;
 string name;
@@ -45,7 +46,7 @@ checkstate state;
 
 }
 mapping(uint256=>funding) private fund;
-// uint256 public  id;
+
 
 function add_user(uint256 _id,string calldata _name,
 string memory _discription) internal {
@@ -53,17 +54,18 @@ fund[_id] = funding({
     id: _id,
 name : _name,
 discription : _discription,
+
 campowner : msg.sender,
 raiseamount : 0,
 state : checkstate.active
 
 
 });
-// _id++;
+
 }
 
 
-function creation(uint _id,string calldata _name,
+function creation(uint256 _id,string calldata _name,
 string memory _discription) public {
 
 add_user(_id,_name, _discription);
@@ -76,10 +78,12 @@ emit creat(msg.sender, _id);
 function contribution(uint256 user_id) external payable   allowedtime returns (funding memory res) {
 
 fund[user_id].raiseamount += msg.value;
+
+
 require(fund[user_id].state==checkstate.active,"sttae is not acrive");
 
 emit contribute(user_id, msg.sender, msg.value);
-
+show_remainingamount(user_id);
 try this.getdetails(user_id) returns(funding memory _res){
 
     return (_res);
@@ -90,18 +94,26 @@ catch {
  emit error("user not found");
 
 }
-// return this.getdetails(user_id);
+// // return this.getdetails(user_id);
 
 
 }
-// uint256 public goals;
+
 modifier allowedclaim(){
     require(block.timestamp >= endtime,"not allowed claiming cuz allowed time is remaining");
     _;
 }
 
+// uint256 public show_remainingamount;
+
+function show_remainingamount(uint256 user_id) public view returns (uint256){
+
+   uint256 a= goal  - fund[user_id].raiseamount;
+   return a;
+
+}
 function claim(uint256 user_id) public allowedclaim{
-if(fund[user_id].raiseamount >= goals){
+if(fund[user_id].raiseamount >=goal){
 
 
     uint256 amount = fund[user_id].raiseamount;
@@ -119,7 +131,7 @@ modifier refundallowedtime(){
     _;
 }
 function refund(uint256 user_id) public  refundallowedtime {
-if(fund[user_id].raiseamount < goals){
+if(fund[user_id].raiseamount < goal){
     
     uint256 amount = fund[user_id].raiseamount;
     // address a = fund[user_id]
@@ -146,7 +158,7 @@ function getdetails(uint256 uid) external view returns (funding memory) {
 
 function completebyadmin(uint256 u_id) public onlycontractowner{
 
-if(fund[u_id].raiseamount >= goals){
+if(fund[u_id].raiseamount >= goal){
 
 
     uint amount = fund[u_id].raiseamount;
@@ -160,6 +172,10 @@ else{
 }
 
 
+}
+function campaignowner(uint256 user_id) external view returns(address) {
+address campown = fund[user_id].campowner;
+return campown;
 }
 
 
